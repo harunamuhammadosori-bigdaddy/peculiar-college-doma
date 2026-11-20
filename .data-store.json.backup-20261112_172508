@@ -1,0 +1,959 @@
+{
+  "users": [
+    {
+      "id": "usr-super-admin",
+      "email": "harunamuhammadosori@gmail.com",
+      "name": "Muhammad Haruna",
+      "role": "SUPER_ADMIN",
+      "phone": "08123964971",
+      "createdAt": "2025-01-01T00:00:00Z",
+      "isDemo": false
+    },
+    {
+      "id": "usr-admin",
+      "email": "admin@peculiarschools.edu.ng",
+      "name": "Administrator",
+      "role": "ADMIN",
+      "phone": "+234 904 339 0882",
+      "createdAt": "2025-01-01T00:00:00Z",
+      "isDemo": false
+    },
+    {
+      "id": "usr-principal",
+      "email": "principal@peculiarschools.edu.ng",
+      "name": "Mrs. R. A. Adams (Principal)",
+      "role": "PRINCIPAL",
+      "phone": "+234 904 339 0882",
+      "createdAt": "2025-01-01T00:00:00Z",
+      "isDemo": false
+    },
+    {
+      "id": "usr-teacher",
+      "email": "teacher@peculiarschools.edu.ng",
+      "name": "Mr. David O. Emmanuel",
+      "role": "TEACHER",
+      "phone": "+234 802 123 4567",
+      "assignedClasses": [
+        "cls-jss2",
+        "cls-sss1"
+      ],
+      "createdAt": "2025-01-10T00:00:00Z",
+      "isDemo": false
+    },
+    {
+      "id": "usr-accountant",
+      "email": "accountant@peculiarschools.edu.ng",
+      "name": "Mallam Ibrahim Musa (Bursar)",
+      "role": "ACCOUNTANT",
+      "phone": "+234 803 987 6543",
+      "createdAt": "2025-01-12T00:00:00Z",
+      "isDemo": false
+    },
+    {
+      "id": "usr-parent",
+      "email": "parent@peculiarschools.edu.ng",
+      "name": "Alhaji Haruna Muhammad",
+      "role": "PARENT",
+      "phone": "+234 803 555 7890",
+      "linkedStudentIds": [
+        "stu-1",
+        "stu-2"
+      ],
+      "createdAt": "2025-02-01T00:00:00Z",
+      "isDemo": false
+    },
+    {
+      "id": "usr-applicant",
+      "email": "applicant@peculiarschools.edu.ng",
+      "name": "Candidate Portal User",
+      "role": "APPLICANT",
+      "phone": "+234 803 444 6789",
+      "createdAt": "2025-02-01T00:00:00Z",
+      "isDemo": false
+    },
+    {
+      "id": "usr-student",
+      "email": "student@peculiarschools.edu.ng",
+      "name": "Samuel Haruna",
+      "role": "STUDENT",
+      "phone": "+234 803 555 7890",
+      "linkedStudentIds": [
+        "stu-1"
+      ],
+      "createdAt": "2025-02-01T00:00:00Z",
+      "isDemo": false
+    },
+    {
+      "id": "usr-student-2",
+      "email": "emmanueladudu@peculiarschools.edu.ng",
+      "name": "Emmanuel Audu",
+      "role": "STUDENT",
+      "phone": "+234 802 444 1122",
+      "linkedStudentIds": [
+        "stu-3"
+      ],
+      "createdAt": "2025-02-01T00:00:00Z",
+      "isDemo": false
+    },
+    {
+      "id": "usr-student-3",
+      "email": "blessingaliyu@peculiarschools.edu.ng",
+      "name": "Blessing Aliyu",
+      "role": "STUDENT",
+      "phone": "+234 813 999 8877",
+      "linkedStudentIds": [
+        "stu-4"
+      ],
+      "createdAt": "2025-02-01T00:00:00Z",
+      "isDemo": false
+    }
+  ],
+  "students": [
+    {
+      "id": "stu-1",
+      "admissionNo": "PCD/2023/0084",
+      "firstName": "Samuel",
+      "lastName": "Haruna",
+      "otherName": "Godiya",
+      "gender": "Male",
+      "dateOfBirth": "2012-05-14",
+      "arm": "SECONDARY",
+      "classId": "cls-jss2",
+      "className": "JSS 2",
+      "parentId": "usr-parent",
+      "parentName": "Alhaji Haruna Muhammad",
+      "parentPhone": "+234 803 555 7890",
+      "parentEmail": "parent@peculiarschools.edu.ng",
+      "address": "Near Old Market Road, Doma, Nasarawa State",
+      "bloodGroup": "O+",
+      "genotype": "AA",
+      "sportsHouse": "Purple (Faith)",
+      "status": "ACTIVE",
+      "enrolledDate": "2023-09-11"
+    },
+    {
+      "id": "stu-2",
+      "admissionNo": "PCD/2024/0112",
+      "firstName": "Aisha",
+      "lastName": "Haruna",
+      "otherName": "Blessing",
+      "gender": "Female",
+      "dateOfBirth": "2015-08-22",
+      "arm": "PRIMARY",
+      "classId": "cls-pri4",
+      "className": "Primary 4",
+      "parentId": "usr-parent",
+      "parentName": "Alhaji Haruna Muhammad",
+      "parentPhone": "+234 803 555 7890",
+      "parentEmail": "parent@peculiarschools.edu.ng",
+      "address": "Near Old Market Road, Doma, Nasarawa State",
+      "bloodGroup": "B+",
+      "genotype": "AA",
+      "sportsHouse": "Orange (Grace)",
+      "status": "ACTIVE",
+      "enrolledDate": "2024-09-09"
+    },
+    {
+      "id": "stu-3",
+      "admissionNo": "PCD/2022/0045",
+      "firstName": "Emmanuel",
+      "lastName": "Audu",
+      "otherName": "Dan",
+      "gender": "Male",
+      "dateOfBirth": "2009-11-03",
+      "arm": "SECONDARY",
+      "classId": "cls-sss2",
+      "className": "SSS 2 (Science & Arts)",
+      "parentId": "usr-parent-2",
+      "parentName": "Elder Audu Doma",
+      "parentPhone": "+234 802 444 1122",
+      "parentEmail": "audu.family@gmail.com",
+      "address": "Police Station Junction, Doma, Nasarawa State",
+      "bloodGroup": "A+",
+      "genotype": "AS",
+      "sportsHouse": "Blue (Peace)",
+      "status": "ACTIVE",
+      "enrolledDate": "2022-09-15"
+    },
+    {
+      "id": "stu-4",
+      "admissionNo": "PCD/2025/0201",
+      "firstName": "Blessing",
+      "lastName": "Aliyu",
+      "otherName": "Khadijat",
+      "gender": "Female",
+      "dateOfBirth": "2021-03-18",
+      "arm": "NURSERY",
+      "classId": "cls-nur2",
+      "className": "Nursery 2",
+      "parentId": "usr-parent-3",
+      "parentName": "Hajiya Maryam Aliyu",
+      "parentPhone": "+234 813 999 8877",
+      "parentEmail": "m.aliyu@yahoo.com",
+      "address": "Hospital Road, Doma, Nasarawa State",
+      "bloodGroup": "O+",
+      "genotype": "AA",
+      "sportsHouse": "Red (Hope)",
+      "status": "ACTIVE",
+      "enrolledDate": "2025-01-08"
+    }
+  ],
+  "admissions": [
+    {
+      "id": "PCD-2026-0001",
+      "firstName": "Ibrahim",
+      "middleName": "Oche",
+      "lastName": "Abubakar",
+      "gender": "Male",
+      "dateOfBirth": "2014-06-12",
+      "classApplying": "JSS 1",
+      "arm": "SECONDARY",
+      "previousSchool": "St. Patrick Primary School Doma",
+      "residentialAddress": "No 14 Angwan Tiv, Doma, Nasarawa State",
+      "stateOfOrigin": "Nasarawa",
+      "lga": "Doma",
+      "parentFullName": "Mallam Abubakar Oche",
+      "parentPhone": "08023456789",
+      "parentEmail": "abubakar.oche@gmail.com",
+      "relationship": "Father",
+      "parentOccupation": "Civil Servant",
+      "parentAddress": "No 14 Angwan Tiv, Doma, Nasarawa State",
+      "status": "ACCEPTED",
+      "submissionDate": "2026-02-10",
+      "reviewNotes": "Verified previous school results and birth certificate. Candidate accepted into JSS 1.",
+      "reviewedBy": "Admissions Officer",
+      "reviewedAt": "2026-02-14",
+      "interviewDate": "2026-02-18"
+    },
+    {
+      "id": "PCD-2026-0002",
+      "firstName": "Fatima",
+      "middleName": "Zainab",
+      "lastName": "Umar",
+      "gender": "Female",
+      "dateOfBirth": "2020-04-19",
+      "classApplying": "Nursery 1",
+      "arm": "NURSERY",
+      "previousSchool": "Home Care",
+      "residentialAddress": "Beside Local Govt Secretariat, Doma",
+      "stateOfOrigin": "Nasarawa",
+      "lga": "Doma",
+      "parentFullName": "Mrs. Halima Umar",
+      "parentPhone": "08129876543",
+      "parentEmail": "halima.umar@yahoo.com",
+      "relationship": "Mother",
+      "parentOccupation": "Business Trader",
+      "parentAddress": "Beside Local Govt Secretariat, Doma",
+      "status": "UNDER_REVIEW",
+      "submissionDate": "2026-02-24",
+      "reviewNotes": "Application documents submitted. Awaiting scheduled interaction session.",
+      "reviewedBy": "Admissions Officer",
+      "reviewedAt": "2026-02-26"
+    },
+    {
+      "id": "PCD-2026-0003",
+      "firstName": "Victor",
+      "middleName": "Chidera",
+      "lastName": "Okafor",
+      "gender": "Male",
+      "dateOfBirth": "2011-09-08",
+      "classApplying": "SSS 1 (Science)",
+      "arm": "SECONDARY",
+      "previousSchool": "Unity College Lafia",
+      "residentialAddress": "Main Doma-Lafia Express Road, Doma",
+      "stateOfOrigin": "Enugu",
+      "lga": "Udi",
+      "parentFullName": "Chief Emmanuel Okafor",
+      "parentPhone": "08034567812",
+      "parentEmail": "e.okafor@gmail.com",
+      "relationship": "Father",
+      "parentOccupation": "Pharmacist",
+      "parentAddress": "Main Doma-Lafia Express Road, Doma",
+      "status": "SUBMITTED",
+      "submissionDate": "2026-03-01",
+      "reviewNotes": "New application received. Awaiting review."
+    }
+  ],
+  "results": [
+    {
+      "id": "res-1",
+      "studentId": "stu-1",
+      "studentName": "Samuel Haruna",
+      "admissionNo": "PCD/2023/0084",
+      "classId": "cls-jss2",
+      "className": "JSS 2",
+      "arm": "SECONDARY",
+      "academicSession": "2025/2026",
+      "term": "First Term",
+      "subjects": [
+        {
+          "subject": "Mathematics",
+          "caScore": 36,
+          "examScore": 56,
+          "total": 92,
+          "grade": "A",
+          "remark": "Distinction"
+        },
+        {
+          "subject": "English Language",
+          "caScore": 34,
+          "examScore": 54,
+          "total": 88,
+          "grade": "A",
+          "remark": "Distinction"
+        },
+        {
+          "subject": "Basic Science & Tech",
+          "caScore": 32,
+          "examScore": 52,
+          "total": 84,
+          "grade": "A",
+          "remark": "Distinction"
+        },
+        {
+          "subject": "Social Studies & Civic",
+          "caScore": 30,
+          "examScore": 48,
+          "total": 78,
+          "grade": "B",
+          "remark": "Very Good"
+        },
+        {
+          "subject": "Computer / ICT Studies",
+          "caScore": 38,
+          "examScore": 55,
+          "total": 93,
+          "grade": "A",
+          "remark": "Distinction"
+        },
+        {
+          "subject": "Christian Religious Studies",
+          "caScore": 35,
+          "examScore": 53,
+          "total": 88,
+          "grade": "A",
+          "remark": "Distinction"
+        },
+        {
+          "subject": "Agricultural Science",
+          "caScore": 31,
+          "examScore": 50,
+          "total": 81,
+          "grade": "A",
+          "remark": "Distinction"
+        },
+        {
+          "subject": "Business Studies",
+          "caScore": 29,
+          "examScore": 49,
+          "total": 78,
+          "grade": "B",
+          "remark": "Very Good"
+        },
+        {
+          "subject": "French Language",
+          "caScore": 28,
+          "examScore": 46,
+          "total": 74,
+          "grade": "B",
+          "remark": "Very Good"
+        }
+      ],
+      "totalScore": 756,
+      "maxScore": 900,
+      "average": 84,
+      "positionInClass": 2,
+      "totalStudentsInClass": 34,
+      "attendanceDays": 62,
+      "totalDays": 65,
+      "teacherRemark": "Brilliant student with keen interest in science and analytical thinking.",
+      "principalRemark": "Exceptional academic dedication and commendable discipline throughout the term.",
+      "published": true,
+      "publishedDate": "2026-01-05"
+    },
+    {
+      "id": "res-2",
+      "studentId": "stu-2",
+      "studentName": "Aisha Haruna",
+      "admissionNo": "PCD/2024/0112",
+      "classId": "cls-pri4",
+      "className": "Primary 4",
+      "arm": "PRIMARY",
+      "academicSession": "2025/2026",
+      "term": "First Term",
+      "subjects": [
+        {
+          "subject": "Mathematics",
+          "caScore": 37,
+          "examScore": 55,
+          "total": 92,
+          "grade": "A",
+          "remark": "Distinction"
+        },
+        {
+          "subject": "English Grammar & Reading",
+          "caScore": 35,
+          "examScore": 54,
+          "total": 89,
+          "grade": "A",
+          "remark": "Distinction"
+        },
+        {
+          "subject": "Basic Science",
+          "caScore": 33,
+          "examScore": 51,
+          "total": 84,
+          "grade": "A",
+          "remark": "Distinction"
+        },
+        {
+          "subject": "Social Studies",
+          "caScore": 32,
+          "examScore": 50,
+          "total": 82,
+          "grade": "A",
+          "remark": "Distinction"
+        },
+        {
+          "subject": "Quantitative Aptitude",
+          "caScore": 36,
+          "examScore": 56,
+          "total": 92,
+          "grade": "A",
+          "remark": "Distinction"
+        },
+        {
+          "subject": "Verbal Aptitude",
+          "caScore": 34,
+          "examScore": 52,
+          "total": 86,
+          "grade": "A",
+          "remark": "Distinction"
+        },
+        {
+          "subject": "Islamic Religious Studies",
+          "caScore": 36,
+          "examScore": 55,
+          "total": 91,
+          "grade": "A",
+          "remark": "Distinction"
+        }
+      ],
+      "totalScore": 616,
+      "maxScore": 700,
+      "average": 88,
+      "positionInClass": 1,
+      "totalStudentsInClass": 28,
+      "attendanceDays": 64,
+      "totalDays": 65,
+      "teacherRemark": "Outstanding performance! Aisha is punctual, polite and very helpful.",
+      "principalRemark": "A proud role model for her peers. Keep up the high standard.",
+      "published": true,
+      "publishedDate": "2026-01-05"
+    }
+  ],
+  "fees": [
+    {
+      "id": "fee-1",
+      "studentId": "stu-1",
+      "studentName": "Samuel Haruna",
+      "admissionNo": "PCD/2023/0084",
+      "className": "JSS 2",
+      "term": "Second Term",
+      "session": "2025/2026",
+      "tuitionFee": 45000,
+      "developmentLevy": 5000,
+      "sportsLevy": 3000,
+      "examinationFee": 2000,
+      "uniformFee": 0,
+      "totalPayable": 55000,
+      "totalPaid": 55000,
+      "balanceDue": 0,
+      "status": "PAID",
+      "payments": [
+        {
+          "id": "pay-1",
+          "receiptNumber": "PCD/REC/2026-0089",
+          "studentId": "stu-1",
+          "studentName": "Samuel Haruna",
+          "admissionNo": "PCD/2023/0084",
+          "className": "JSS 2",
+          "amountPaid": 55000,
+          "paymentDate": "2026-01-14",
+          "paymentMethod": "Bank Transfer",
+          "transactionReference": "TRX-FBN-20260114-8849",
+          "term": "Second Term",
+          "session": "2025/2026",
+          "recordedBy": "Mallam Ibrahim Musa (Bursar)"
+        }
+      ]
+    },
+    {
+      "id": "fee-2",
+      "studentId": "stu-2",
+      "studentName": "Aisha Haruna",
+      "admissionNo": "PCD/2024/0112",
+      "className": "Primary 4",
+      "term": "Second Term",
+      "session": "2025/2026",
+      "tuitionFee": 35000,
+      "developmentLevy": 4000,
+      "sportsLevy": 3000,
+      "examinationFee": 3000,
+      "uniformFee": 0,
+      "totalPayable": 45000,
+      "totalPaid": 30000,
+      "balanceDue": 15000,
+      "status": "PARTIAL",
+      "payments": [
+        {
+          "id": "pay-2",
+          "receiptNumber": "PCD/REC/2026-0094",
+          "studentId": "stu-2",
+          "studentName": "Aisha Haruna",
+          "admissionNo": "PCD/2024/0112",
+          "className": "Primary 4",
+          "amountPaid": 30000,
+          "paymentDate": "2026-01-18",
+          "paymentMethod": "POS",
+          "transactionReference": "POS-0992381283",
+          "term": "Second Term",
+          "session": "2025/2026",
+          "recordedBy": "Mallam Ibrahim Musa (Bursar)"
+        }
+      ]
+    }
+  ],
+  "news": [
+    {
+      "id": "news-1",
+      "title": "2026/2027 Academic Session: Admission Now Open for All Arms",
+      "slug": "2026-2027-admission-open-all-arms",
+      "excerpt": "Peculiar College Doma invites parents and guardians to enroll their children into Nursery, Primary, and Secondary classes for the upcoming academic session.",
+      "content": "We are pleased to announce that admission applications for the 2026/2027 academic session are now officially open across all educational arms: Nursery (Early Years), Primary (Foundational), and Secondary (College).\n    \nAt Peculiar College Doma, we combine qualitative classroom instruction with strong moral foundations, disciplined leadership training, and engaging extracurricular sports. Admission forms are available online through our portal and at the school administration office.\n\nInterested parents are encouraged to apply early as class capacities are strictly managed to maintain optimal student-teacher ratios.",
+      "category": "Announcement",
+      "featuredImage": "/school-media/front-view-gate.jpg",
+      "author": "Admissions Office",
+      "authorRole": "Registrar",
+      "publishDate": "2026-02-15",
+      "published": true,
+      "isImportantNotice": true
+    },
+    {
+      "id": "news-2",
+      "title": "Inter-House Sports Championship: Purple (Faith) House Emerges Overall Champions",
+      "slug": "inter-house-sports-championship-results",
+      "excerpt": "An exciting showcase of athletic talent, sportsmanship, and teamwork culminated in a colorful trophy presentation ceremony at the school grounds.",
+      "content": "The annual Peculiar College Inter-House Sports competition concluded with breathtaking track and field events and a thrilling volleyball finale.\n\nStudents competed vigorously across four traditional houses: Purple (Faith), Orange (Grace), Blue (Peace), and Red (Hope). Purple House carried the day with an impressive tally of gold medals in volleyball, relays, and long jump, clinching the prestigious 2026 Principal Trophy.\n\nThe school management commends all participants, staff coordinators, and parents who turned out in large numbers to cheer our young champions.",
+      "category": "Sports",
+      "featuredImage": "/sport.jpg",
+      "author": "Sports Committee",
+      "authorRole": "Head of Physical & Health Education",
+      "publishDate": "2026-03-12",
+      "published": true
+    },
+    {
+      "id": "news-3",
+      "title": "Resumption Timetable & Continuous Assessment Guidelines Released",
+      "slug": "resumption-timetable-continuous-assessment",
+      "excerpt": "Academic calendar update covering midterm break resumption, project submission dates, and preparations for terminal unified examinations.",
+      "content": "All students and parents are hereby notified that regular classes have resumed following the scheduled midterm break.\n\nTeachers across Nursery, Primary, and Secondary sections have begun administering the second continuous assessment tests (CA 2). Parents are kindly advised to monitor their children's homework diaries and ensure regular study habits at home.",
+      "category": "Academic",
+      "featuredImage": "/school-media/examination-hall-interior.jpg",
+      "author": "Academic Board",
+      "authorRole": "Vice Principal (Academics)",
+      "publishDate": "2026-03-01",
+      "published": true
+    },
+    {
+      "id": "news-4",
+      "title": "State-of-the-Art Science Laboratories & 24/7 Solar Power Facility Commissioned",
+      "slug": "science-laboratories-solar-power-commissioned",
+      "excerpt": "Peculiar College strengthens practical science education with upgraded Chemistry, Physics, and Biology laboratory apparatus backed by uninterrupted solar power.",
+      "content": "In our continued pursuit of academic distinction, the school board has completed comprehensive upgrades to our secondary school science laboratories and examination facilities.\n\nThe laboratories now house advanced analytical reagents, monocular optical microscopes, and electrical circuit test benches tailored to WAEC and NECO standards. An industrial solar inverter plant has also been commissioned to guarantee 24/7 power for computer studies and science practicals.",
+      "category": "Academic",
+      "featuredImage": "/school-media/chemistry-lab-glassware.jpg",
+      "author": "Science Department",
+      "authorRole": "Head of Sciences",
+      "publishDate": "2026-03-10",
+      "published": true
+    }
+  ],
+  "gallery": [
+    {
+      "id": "gal-campus-1",
+      "title": "School Front View & Main Gate",
+      "category": "Campus Tour",
+      "description": "The front entrance and secure gate perimeter of Peculiar College Doma, welcoming students and visitors.",
+      "imageUrl": "/school-media/front-view-gate.jpg",
+      "date": "2026-03-01",
+      "published": true,
+      "featured": true
+    },
+    {
+      "id": "gal-campus-2",
+      "title": "Official School Signpost & Welcome Gate",
+      "category": "Campus Tour",
+      "description": "The entrance signage welcoming parents, visitors, and pupils along Peace Road / Off Ruttu Road, Doma.",
+      "imageUrl": "/school-media/school-signpost.jpg",
+      "date": "2026-03-01",
+      "published": true,
+      "featured": true
+    },
+    {
+      "id": "gal-campus-3",
+      "title": "School Compound & Assembly Grounds",
+      "category": "Campus Tour",
+      "description": "Expansive compound and sandy yard where morning devotion, assembly, and open-air activities are held under shade trees.",
+      "imageUrl": "/school-media/school-compound-aerial.jpg",
+      "date": "2026-03-05",
+      "published": true,
+      "featured": true
+    },
+    {
+      "id": "gal-campus-4",
+      "title": "Tree-Lined Classroom Block & Compound",
+      "category": "Campus Tour",
+      "description": "Serene tree-lined walkways offering natural shade and cooling across the classroom blocks.",
+      "imageUrl": "/school-media/classroom-trees-compound.jpg",
+      "date": "2026-03-05",
+      "published": true,
+      "featured": true
+    },
+    {
+      "id": "gal-blocks-1",
+      "title": "Senior Secondary Classroom Block",
+      "category": "Classrooms",
+      "description": "Purpose-built senior secondary block hosting SSS 1 to SSS 3 science, commercial, and arts classrooms.",
+      "imageUrl": "/school-media/senior-secondary-block.jpg",
+      "date": "2026-02-20",
+      "published": true,
+      "featured": true
+    },
+    {
+      "id": "gal-blocks-2",
+      "title": "Junior Secondary Classroom Block",
+      "category": "Classrooms",
+      "description": "Classroom block for JSS 1, JSS 2, and JSS 3 students equipped for comprehensive basic education.",
+      "imageUrl": "/school-media/junior-secondary-block.jpg",
+      "date": "2026-02-20",
+      "published": true,
+      "featured": true
+    },
+    {
+      "id": "gal-class-jss1",
+      "title": "JSS 1 Students in Class Session",
+      "category": "Classrooms",
+      "description": "Junior secondary students seated at classroom desks attentively following subject explanations.",
+      "imageUrl": "/school-media/jss1-class-session.jpg",
+      "date": "2026-03-15",
+      "published": true,
+      "featured": true
+    },
+    {
+      "id": "gal-class-jss2",
+      "title": "JSS 2 Learning & Interactive Session",
+      "category": "Classrooms",
+      "description": "Diligent students engaged during lessons with experienced subject teachers.",
+      "imageUrl": "/school-media/jss2-class-session.jpg",
+      "date": "2026-03-15",
+      "published": true,
+      "featured": false
+    },
+    {
+      "id": "gal-class-jss3",
+      "title": "JSS 3 Students Preparing for BECE",
+      "category": "Classrooms",
+      "description": "Junior secondary final-year students focused on continuous assessment tests and exam prep.",
+      "imageUrl": "/school-media/jss3-class-session.jpg",
+      "date": "2026-03-18",
+      "published": true,
+      "featured": false
+    },
+    {
+      "id": "gal-class-sss1",
+      "title": "SSS 1 Senior Students in Study Session",
+      "category": "Classrooms",
+      "description": "Senior secondary students in mathematics and English continuous assessment session.",
+      "imageUrl": "/school-media/sss1-class-session.jpg",
+      "date": "2026-03-18",
+      "published": true,
+      "featured": true
+    },
+    {
+      "id": "gal-class-sss3",
+      "title": "SSS 3 Graduating Class in Class Session",
+      "category": "Classrooms",
+      "description": "Final year senior secondary students revising for WAEC and NECO examinations.",
+      "imageUrl": "/school-media/sss3-graduating-class.jpg",
+      "date": "2026-03-20",
+      "published": true,
+      "featured": false
+    },
+    {
+      "id": "gal-blocks-stair",
+      "title": "Upper Walkway & Staircase Access",
+      "category": "Classrooms",
+      "description": "Staircase access leading to upper level classrooms and observation corridors.",
+      "imageUrl": "/school-media/staircase-corridor-1.jpg",
+      "date": "2026-02-22",
+      "published": true,
+      "featured": false
+    },
+    {
+      "id": "gal-lab-chem1",
+      "title": "Chemistry Laboratory Apparatus & Glassware",
+      "category": "Science Labs",
+      "description": "Beakers, flasks, test tubes, and measuring cylinders for practical chemistry experiments.",
+      "imageUrl": "/school-media/chemistry-lab-glassware.jpg",
+      "date": "2026-03-10",
+      "published": true,
+      "featured": true
+    },
+    {
+      "id": "gal-lab-chem2",
+      "title": "Chemistry Laboratory Reagents & Chemicals",
+      "category": "Science Labs",
+      "description": "Safely catalogued analytical chemicals, solutions, and reagents for senior secondary practical examinations.",
+      "imageUrl": "/school-media/science-lab-reagents.jpg",
+      "date": "2026-03-10",
+      "published": true,
+      "featured": true
+    },
+    {
+      "id": "gal-lab-chem3",
+      "title": "Chemistry Laboratory Preparation Stations",
+      "category": "Science Labs",
+      "description": "Wash bottles, test-tube racks, and reagent stands prepared for WAEC/NECO practicals.",
+      "imageUrl": "/school-media/chemistry-wash-bottles.jpg",
+      "date": "2026-03-12",
+      "published": true,
+      "featured": false
+    },
+    {
+      "id": "gal-lab-bio1",
+      "title": "Biology Laboratory Compound Microscopes",
+      "category": "Science Labs",
+      "description": "Compound optical microscopes, glass slides, and petri dishes for biology cellular observation.",
+      "imageUrl": "/school-media/biology-lab-microscopes.jpg",
+      "date": "2026-03-12",
+      "published": true,
+      "featured": true
+    },
+    {
+      "id": "gal-lab-bio2",
+      "title": "Biology Anatomical & Skeletal Specimens",
+      "category": "Science Labs",
+      "description": "Zoological skeletal mounts and anatomical models aiding practical biological science studies.",
+      "imageUrl": "/school-media/biology-lab-specimens.jpg",
+      "date": "2026-03-12",
+      "published": true,
+      "featured": false
+    },
+    {
+      "id": "gal-lab-phy1",
+      "title": "Physics Laboratory Optics & Ray Bench",
+      "category": "Science Labs",
+      "description": "Light ray experiment boxes, glass prisms, and optical benches for physics experiments.",
+      "imageUrl": "/school-media/physics-lab-optics.jpg",
+      "date": "2026-03-14",
+      "published": true,
+      "featured": true
+    },
+    {
+      "id": "gal-lab-phy2",
+      "title": "Physics Electricity Kits & Circuit Demonstrators",
+      "category": "Science Labs",
+      "description": "Resistance boxes, circuit keys, connecting wires, and demonstration boards for electrical physics.",
+      "imageUrl": "/school-media/physics-lab-circuit-components.jpg",
+      "date": "2026-03-14",
+      "published": true,
+      "featured": false
+    },
+    {
+      "id": "gal-lab-phy3",
+      "title": "Physics Galvanometers & Measurement Meters",
+      "category": "Science Labs",
+      "description": "Voltmeters, ammeters, and sensitive galvanometers for precision electromagnetic experiments.",
+      "imageUrl": "/school-media/physics-lab-galvanometers.jpg",
+      "date": "2026-03-14",
+      "published": true,
+      "featured": false
+    },
+    {
+      "id": "gal-lab-phy4",
+      "title": "Precision Analytical Scales & Measurement Stations",
+      "category": "Science Labs",
+      "description": "Digital electronic scales, mechanical dial balances, and digital multimeters for quantitative labs.",
+      "imageUrl": "/school-media/physics-balances-meters.jpg",
+      "date": "2026-03-15",
+      "published": true,
+      "featured": false
+    },
+    {
+      "id": "gal-lab-agric",
+      "title": "Agricultural Science Equipment & Tools",
+      "category": "Science Labs",
+      "description": "Knapsack sprayers, soil samplers, and farm tools supporting practical agricultural science.",
+      "imageUrl": "/school-media/agric-science-lab-tools.jpg",
+      "date": "2026-03-16",
+      "published": true,
+      "featured": true
+    },
+    {
+      "id": "gal-fac-exam-ext",
+      "title": "Spacious Multi-Purpose Examination Hall Exterior",
+      "category": "Facilities",
+      "description": "Expansive examination hall facility built to comfortably host external and internal examinations.",
+      "imageUrl": "/school-media/exam-hall-exterior.jpg",
+      "date": "2026-02-25",
+      "published": true,
+      "featured": true
+    },
+    {
+      "id": "gal-fac-exam-int",
+      "title": "Examination Hall Interior & Structured Hallway",
+      "category": "Facilities",
+      "description": "Wide, well-ventilated examination hall interior ensuring strict compliance with exam spacing.",
+      "imageUrl": "/school-media/examination-hall-interior.jpg",
+      "date": "2026-02-25",
+      "published": true,
+      "featured": true
+    },
+    {
+      "id": "gal-fac-admin",
+      "title": "Administrative Block & Admissions Desk",
+      "category": "Facilities",
+      "description": "The main administrative reception and office handling admissions, parent inquiries, and school records.",
+      "imageUrl": "/school-media/administrative-block-office.jpg",
+      "date": "2026-02-15",
+      "published": true,
+      "featured": true
+    },
+    {
+      "id": "gal-fac-staff",
+      "title": "Teachers Common Staff Room",
+      "category": "Facilities",
+      "description": "Dedicated preparation space where educators review lesson plans, grade assignments, and collaborate.",
+      "imageUrl": "/school-media/teachers-staff-room.jpg",
+      "date": "2026-02-15",
+      "published": true,
+      "featured": false
+    },
+    {
+      "id": "gal-fac-power",
+      "title": "Solar & Inverter Power System Installation",
+      "category": "Facilities",
+      "description": "Dedicated auxiliary power and solar inverter equipment ensuring steady electricity for computer and lab activities.",
+      "imageUrl": "/school-media/solar-power-room.jpg",
+      "date": "2026-03-05",
+      "published": true,
+      "featured": false
+    },
+    {
+      "id": "gal-fac-rest",
+      "title": "Clean School Restroom Facilities",
+      "category": "Facilities",
+      "description": "Dedicated sanitary facilities for pupils and students maintaining campus hygiene.",
+      "imageUrl": "/school-media/school-restrooms.jpg",
+      "date": "2026-03-05",
+      "published": true,
+      "featured": false
+    },
+    {
+      "id": "gal-life-outdoor",
+      "title": "Students & Pupils Gathered on School Grounds",
+      "category": "Student Life",
+      "description": "Pupils and students proudly assembled in their signature check uniforms on the school compound.",
+      "imageUrl": "/school-media/students-outdoor-gathering.jpg",
+      "date": "2026-03-25",
+      "published": true,
+      "featured": true
+    },
+    {
+      "id": "gal-life-social",
+      "title": "School Social Day & Cultural Celebration",
+      "category": "Student Life",
+      "description": "Joyful pupils displaying their cultural flair and artistic presentations during school social day.",
+      "imageUrl": "/school-media/students-social-day-celebration.jpg",
+      "date": "2026-03-25",
+      "published": true,
+      "featured": true
+    },
+    {
+      "id": "gal-life-assembly",
+      "title": "Morning Assembly & Devotion Session",
+      "category": "Student Life",
+      "description": "Entire student body and faculty gathered neatly under shade trees for daily morning devotion and moral guidance.",
+      "imageUrl": "/assembly.jpg",
+      "date": "2026-02-15",
+      "published": true,
+      "featured": true
+    },
+    {
+      "id": "gal-life-sport",
+      "title": "Inter-House Sports Volleyball Championship",
+      "category": "Sports",
+      "description": "Students competing with great energy and sportsmanship during the volleyball tournament on the sports court.",
+      "imageUrl": "/sport.jpg",
+      "date": "2026-03-12",
+      "published": true,
+      "featured": true
+    }
+  ],
+  "contactMessages": [
+    {
+      "id": "msg-1",
+      "name": "Mrs. Zainab Tanko",
+      "email": "zainab.tanko@gmail.com",
+      "phone": "08034567890",
+      "subject": "Inquiry on Boarding / Day Secondary School Options",
+      "message": "Good day, please I would like to inquire if Peculiar College Doma offers bus shuttle services from Lafia road to Doma for day students in JSS 1?",
+      "createdAt": "2026-02-28T09:30:00Z",
+      "status": "UNREAD"
+    },
+    {
+      "id": "msg-2",
+      "name": "Pastor Barnabas Sunday",
+      "email": "b.sunday@yahoo.com",
+      "phone": "08134445566",
+      "subject": "Nursery 2 Admission Availability",
+      "message": "Hello, we are relocating to Doma next month and would like to register our twin boys into Nursery 2. Are slots still available?",
+      "createdAt": "2026-02-20T14:15:00Z",
+      "status": "REPLIED",
+      "notes": "Informed parent that slots are open and guided them to fill the online admission form."
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log-1",
+      "timestamp": "2026-03-01T08:15:22Z",
+      "actorEmail": "admin@peculiarschools.edu.ng",
+      "actorRole": "ADMIN",
+      "action": "ADMISSION_REVIEW",
+      "target": "PCD-2026-0001 (Ibrahim Oche)",
+      "details": "Status updated from SUBMITTED to ACCEPTED following document verification.",
+      "ipAddress": "197.210.55.12"
+    },
+    {
+      "id": "log-2",
+      "timestamp": "2026-02-28T14:40:10Z",
+      "actorEmail": "accountant@peculiarschools.edu.ng",
+      "actorRole": "ACCOUNTANT",
+      "action": "FEE_PAYMENT_RECORDED",
+      "target": "Receipt PCD/REC/2026-0094 (Aisha Haruna)",
+      "details": "Recorded POS payment of N30,000 for Second Term 2025/2026.",
+      "ipAddress": "197.210.55.18"
+    },
+    {
+      "id": "log-3",
+      "timestamp": "2026-02-20T11:05:00Z",
+      "actorEmail": "principal@peculiarschools.edu.ng",
+      "actorRole": "PRINCIPAL",
+      "action": "RESULTS_PUBLISHED",
+      "target": "JSS 2 First Term 2025/2026",
+      "details": "Verified and approved publication of terminal examination results.",
+      "ipAddress": "197.210.55.10"
+    }
+  ]
+}
